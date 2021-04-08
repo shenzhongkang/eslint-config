@@ -1,20 +1,64 @@
 {
-  "name": "eslint-config-kang",
+  "name": "@shenzhongkang/eslint-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "My shared ESLint & Prettier configuration for projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShenZhongkang/eslint-config-kang.git"
+    "url": "git+https://github.com/shenzhongkang/eslint-config.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "node",
+    "typescript",
+    "airbnb",
+    "eslint",
+    "lint",
+    "shenzhongkang",
+    "config",
+    "prettier"
+  ],
+  "author": "shenzhongkang",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "bugs": {
-    "url": "https://github.com/ShenZhongkang/eslint-config-kang/issues"
+    "url": "https://github.com/shenzhongkang/eslint-config/issues"
   },
-  "homepage": "https://github.com/ShenZhongkang/eslint-config-kang#readme"
+  "homepage": "https://github.com/shenzhongkang/eslint-config#readme",
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@shenzhongkang/eslint-config-airbnb": "git+https://github.com/shenzhongkang/eslint-config-airbnb.git",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@shenzhongkang/eslint-config-airbnb": "git+https://github.com/shenzhongkang/eslint-config-airbnb.git",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  }
 }
